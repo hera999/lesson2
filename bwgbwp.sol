@@ -56,11 +56,7 @@ interface IERC20 {
      *
      * 释放 {Transfer} 事件.
      */
-    function transferFrom(
-        address from,
-        address to,
-        uint256 amount
-    ) external returns (bool);
+    function transferFrom(address from, address to, uint256 amount) external returns (bool);
 }
 
 contract ERC20 is IERC20 {
